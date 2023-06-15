@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 12rem;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.lng-btn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+.lng-btn i {
+    width: 1rem;
+    margin-left: 10px;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    max-width: calc( 83.33333333333334% - 6rem );
+}
+
+.header-text{
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.header-content h1 {
+    font-size: 2.9rem;
+    font-weight: 900;
+    line-height: 4.375rem;
+}
+
+.header-content h3 {
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+}
+
+.email-form {
+    background: transparent;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.875rem;
+    overflow: hidden;
+    gap: 1rem;
+}
+
+.email-form input {
+    width: auto;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #555555;
+    border-radius: 3px;
+    outline: 0;
+    margin-left: 1.25rem;
+    padding: 0.875rem 2.5rem 0.875rem 1rem;
+    font-size: 1rem;
+}
+
+.email-form input::placeholder{
+    color: #fff;
+}
+
+.email-form input:focus {
+    color: #fff;
+    outline: #fff;
+    border: 1px solid #fff;
+}
+
+.email-form button {
+    background: #db0001;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    color: #fff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.8rem 1.875rem;
+}
+
+.features {
+    padding: 3.125rem 12%;
+    font-size: 1.375rem;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3.125rem 0;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 1.25rem;
+    width: 100%;
+}
+
+.text-col h2{
+    font-size: 3.25rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.text-col p{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+
+.img-col img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.video {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+video{
+    display: inline-block;
+    vertical-align: baseline;
+    width: 100%;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.line {
+    background: #2b2a2a;
+    width: 100%;
+    height: 8px;
+    border: 0;
+    outline: 0;
+}
+
+.faqs{
+    padding: 3.125rem 12%;
+}
+
+.faqs h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+.faqs-con{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.faq{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.4rem;
+    height: fit-content;
+    background-color:   rgba(45, 45, 45, 1);
+    cursor: pointer;
+    margin-bottom: 0.6rem;
+}
+
+.faq h4{
+    font-size: 1.55rem;
+    line-height: 2.2;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-left: 0.5rem;
+}
+
+.faq-icon{
+    align-self: flex-start;
+    font-size: 1.55rem;
+    padding-right: 0.5rem;
+    margin-top: 0.6rem;
+}
+
+.faq p{
+    margin-top: 0.8rem;
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.faq.open p{
+    display: block;
+}
+
+.get-started{
+    text-align: center;
+    margin: 2rem auto 4rem;
+}
+
+.get-started p{
+    font-size: 1.25rem;
+}
+
+.footer {
+    padding: 3.125rem 12%;
+    margin: 2rem auto;
+}
+
+.footer a{
+    color: #c1c1c1;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+}
+
+.footer-list li{
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-list li a{
+    color: #c1c1c1;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-btn{
+    margin-top: 2rem;
+}
+
+.footer-btn .lng-btn{
+    background: #2b2a2a;
+    color: #c1c1c1;
+    border: 1px solid #555;
+    border-radius: 2px;
+    padding: 3px 16px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-btn .lng-btn .fa-globe{
+    width: 1.5rem;
+    margin: 0 10px 2px 0;
+}
+
+.footer-btn p{
+    margin-top: 1.5rem;
+    color: #c1c1c1;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@media screen and (max-width:1024px) {
+    .header{
+        padding: 10px 5%;
+        height: 50vh;
+    }
+
+    .header-content{
+        max-width: calc(100% - 4rem);
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .features, .faqs{
+        padding: 3.125rem 5%;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .text-col{
+        text-align: center;
+        width: 100%;
+    }
+
+    .text-col h2, .faqs h2{
+        font-size: 2rem;
+    }
+
+    .text-col p{
+        font-size: 1rem;
+    }
+    
+    .line-break br{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 624px) {
+
+    nav {
+        padding: 0;
+    }
+    
+    .logo {
+        width: 8rem;
+    }
+    
+    nav button {
+        margin-left: 0;
+    }
+
+    .header{
+        padding: 0 auto;
+    }
+    
+    .header-content{
+        max-width: calc(100% - 3rem);
+        margin-top: 3rem;
+    }
+
+    .header-text{
+        padding: 0 1.5rem;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 0.9rem;
+    }
+
+    .header-text h3{
+        margin-bottom: 0.9rem;
+    }
+
+    .email-form {
+        flex-direction: column;
+        overflow: visible;
+        margin-right: 1rem;
+        margin-top: 0.9rem;
+    }
+    
+    .email-form input {
+        margin-left: 1.25rem;
+        padding: 0.875rem ;
+        font-size: 1rem;
+    }
+    
+    .email-form input::placeholder{
+        color: #fff;
+    }
+    
+    .email-form input:focus {
+        color: #fff;
+        outline: #fff;
+        border: 1px solid #fff;
+    }
+    
+    .email-form button {
+       margin-top: 0 ;
+       font-size: 1rem;
+    }
+
+    .faq{
+        padding: 0.5rem;
+    }
+    
+    .faq h4, .faq-icon, .faq p{
+        font-size: 1.2rem;
+    }
+
+    .get-started p{
+        font-size: 1.1rem;
+        padding: 0 2rem 1rem;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-list li{
+        margin-bottom: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 412px) {
+    .header{
+        padding: 0 auto;
+        height: 80vh;
+    }
+
+    .header-content{
+        max-width: 100%;
+    }
+
+
+    .header-text h3{
+        margin-bottom: 0.9rem;
+    }
+
+    .email-form input {
+        font-size: 0.875rem;
+    }
+    
+    .email-form button {
+        font-size: 1rem;
+        padding: 0.7rem 0.875rem;
+    }
+}   
